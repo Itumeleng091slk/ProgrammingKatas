@@ -122,7 +122,7 @@ for j in range(1, w+1) :
 if ( i == 1 or i == h or j == 1 or j == w) :
 print("*", end = " ")
 else:
-print("", end = " ")
+print("Write", "Good", "code", end = " ")
 
 h = 4
 w = 4
