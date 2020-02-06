@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-def longest(w):
-    print("The longest word in the list is: ")
-    words = list(w.split(" "))
-    length= []
-    for i in words:
-        length.append(len(i))
-    maximum = max(length)
-    returnlist= []
-    for j in words:
-        if len(j) ==maximum:
-           returnlist.append(j)
-           list_word = j
-           print(list_word)
-longest(input("enter your words: "))
-=======
-
 #Excercise: Hello
 def Hello():
       name = str(input())
@@ -53,7 +36,6 @@ for i in range(side):
 print('#', end = ' ')
 print()
 square(4)
-
 
 #Triangle (2)
 # Exercise: Draw a right handed triangle
@@ -103,25 +85,21 @@ print("\r")
 n = 4
 isosceles(n)
 
-
 # Exercise: find the longest string
-from itertools import count
-def longest_word(lst, n):
-cnt = count()
-return sorted (lst, key = lambda w : (len(w), next(cnt)),reverse = True) [:n]
-lst = ("Samantha" , "itumeleng")
-n = 1
-print(longest_word(lst, n))
-
-
-# continuation
-from itertools import count
-def longest_word(lst, n):
-cnt = count()
-return sorted (lst, key = lambda w : (len(w), next(cnt)),reverse = True) [:n]
-lst = ("Samantha" , "itumeleng","sally","carrie","margarita")
-n = 3 = input("words")
-print(longest_word(lst, n))
+def longest(w):
+    print("The longest word in the list is: ")
+    words = list(w.split(" "))
+    length= []
+    for i in words:
+        length.append(len(i))
+    maximum = max(length)
+    returnlist= []
+    for j in words:
+        if len(j) ==maximum:
+           returnlist.append(j)
+           list_word = j
+           print(list_word)
+longest(input("enter your words: "))
 
 #Exercise: combine two lists/arrays
 def main():
@@ -141,7 +119,7 @@ def frame(words) :
           print('* {a:<{b}} *'.format(a=word, b=size))
     print('*' * (size + 4))
 frame(s.split(" "))
-=======
+
 
 
 
@@ -156,4 +134,4 @@ frame(s.split(" "))
    
 
 
->>>>>>> 3084e950e572db129534c2b5492d540964fe4a48
+
