@@ -4,7 +4,7 @@ def Hello():
       return name;
 print("hello " + Hello())
 
-Exercise: check if a number is even
+#Exercise: check if a number is even
 def even_or_odd(name="even or odd"):
 num = int(input("enter a number: "))
 if (num % 2) == 0:
