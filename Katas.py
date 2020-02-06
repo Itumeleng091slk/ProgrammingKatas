@@ -23,7 +23,7 @@ side = int(input("enter any number of the square : "))
 print("Square")
 for i in range(side):
 for i in range(side):
-print('*', end = ' ')
+print('#', end = ' ')
 print()
 square(2)
 
@@ -34,7 +34,7 @@ side = int(input("enter any number of the square : "))
 print("Square")
 for i in range(side):
 for i in range(side):
-print('*', end = ' ')
+print('#', end = ' ')
 print()
 square(4)
 
@@ -45,7 +45,7 @@ def triangle(name = "x"):
 x = int(input("enter any number of a row: "))
 for i in range(x):
 for j in range(i + 1):
-print('*', end = ' ')
+print('#', end = ' ')
 print()
 triangle(2)
  
@@ -55,7 +55,7 @@ def triangle(name = "x"):
 x = int(input("enter any number of a row: "))
 for i in range(x):
 for j in range(i + 1):
-print('*', end = ' ')
+print('#', end = ' ')
 print()
 triangle(4)
 
@@ -68,7 +68,7 @@ for j in range (0, n):
 print(end=" ")
 n = n - 1
 for j in range (0, i+1):
-print("*", end=" ") 
+print("#", end=" ") 
 print("\r")
 n = 2
 isosceles(n)
@@ -82,7 +82,7 @@ for j in range (0, n):
 print(end=" ")
 n = n - 1
 for j in range (0, i+1):
-print("*", end=" ") 
+print("#", end=" ") 
 print("\r")
 n = 4
 isosceles(n)
