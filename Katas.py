@@ -1,25 +1,4 @@
-<<<<<<< HEAD
-def combine():
-      list1 = []
-      list2 = []
-      
 
-      list_1 = input("enter your first set of numbers: ") .split(" ")
-      list1 = list_1
-
-      list_2 = input("enter your second set of numbers: ").split(" ")
-      list2 = list_2
-      
-
-      n = len(list1)
-      store_list = []
-      for i in range(n):
-          store_list.append(list1[i])
-          store_list.append(list2[i])
-      print(store_list)
-      
-combine()
-=======
 #Excercise: Hello
 def Hello():
       name = str(input())
@@ -123,13 +102,26 @@ def longest(w):
            print(list_word)
 longest(input("enter your words: "))
 
+
 #Exercise: combine two lists/arrays
-def main():
-list_1 = [2,4,6,8]
-list_2 = [1,3,5,7]
-list_3 = list_1 +list_2
-print (list_3)
-main()
+def combine():
+      list1 = []
+      list2 = []
+    
+      list_1 = input("enter your first set of numbers: ") .split(" ")
+      list1 = list_1
+
+      list_2 = input("enter your second set of numbers: ").split(" ")
+      list2 = list_2
+  
+      n = len(list1)
+      store_list = []
+      for i in range(n):
+          store_list.append(list1[i])
+          store_list.append(list2[i])
+      print(store_list)
+      
+combine()
 
 #Exercise: Frame some text
 <<<<<<< HEAD
@@ -157,4 +149,4 @@ frame(s.split(" "))
 
 
 
->>>>>>> c2eb27c4d08fb8d7dc1cf0a741b9f8ab2bc1f6ab
+
