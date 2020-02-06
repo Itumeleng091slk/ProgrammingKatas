@@ -1,14 +1,8 @@
-<<<<<<< HEAD
+#Excercise: Hello
 def Hello():
       name = str(input())
       return name;
 print("hello " + Hello())
-=======
-#Excercise: Hello
-def hello(name = "tshepo"):
-print ("hello " + name + "!")
-hello("tshepo")
-
 
 Exercise: check if a number is even
 def even_or_odd(name="even or odd"):
