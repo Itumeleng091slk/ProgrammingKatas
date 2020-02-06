@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-s=input("enter the words  : ")
-def frame(words) :
-    size = len(max(words, key=len))
-    print('*' * (size + 4))  
-    for word in words:
-          print('* {a:<{b}} *'.format(a=word, b=size))
-    print('*' * (size + 4))
-frame(s.split(" "))
-=======
+
 #Excercise: Hello
 def Hello():
       name = str(input())
@@ -125,18 +116,16 @@ print (list_3)
 main()
 
 #Exercise: Frame some text
-def frame(h,w) :
-for i in range(1,h+1) :
-print (" ")
-for j in range(1, w+1) :
-if ( i == 1 or i == h or j == 1 or j == w) :
-print("*", end = " ")
-else:
-print("Write", "Good", "code", end = " ")
-
-h = 4
-w = 4
-frame(h,w)
+<<<<<<< HEAD
+s=input("enter the words  : ")
+def frame(words) :
+    size = len(max(words, key=len))
+    print('*' * (size + 4))  
+    for word in words:
+          print('* {a:<{b}} *'.format(a=word, b=size))
+    print('*' * (size + 4))
+frame(s.split(" "))
+=======
 
 
 
