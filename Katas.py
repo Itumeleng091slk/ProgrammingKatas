@@ -1,7 +1,7 @@
 
 #Excercise: Hello
 def Hello():
-      name = str(input())
+      name = str(input("hello"))
       return name;
 print("hello " + Hello())
 
