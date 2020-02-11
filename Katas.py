@@ -77,16 +77,7 @@ isosceles(num)
 
 
 #Isosceles (4)
-# Exercise: Drawdef frame(words) :
-    
-    size = len(max(words, key=len))
-    print('*' * (size + 4))  
-    for word in words:
-          print('* {a:<{b}} *'.format(a=word, b=size))
-    print('*' * (size + 4))
-s=input("enter the words  : ")
-frame(s.split(" ")) an isosceles triangle
-def isosceles(num):
+  def isosceles(num):
     num = int(input("enter the number of rows:"))
     num = 2*num - 2
     for i in range(0, num):
@@ -103,15 +94,7 @@ isosceles(num)
 
 
 # Exercise: find the longest string
-def longest(w):def frame(words) :
-    
-    size = len(max(words, key=len))
-    print('*' * (size + 4))  
-    for word in words:
-          print('* {a:<{b}} *'.format(a=word, b=size))
-    print('*' * (size + 4))
-s=input("enter the words  : ")
-frame(s.split(" "))
+def longest(w):
     print("The longest word in the list is: ")
     words = list(w.split(" "))
     length= []
@@ -131,15 +114,7 @@ longest(input("enter your words: "))
 def combine():
       list1 = []
       list2 = []
-    def frame(words) :
     
-    size = len(max(words, key=len))
-    print('*' * (size + 4))  
-    for word in words:
-          print('* {a:<{b}} *'.format(a=word, b=size))
-    print('*' * (size + 4))
-s=input("enter the words  : ")
-frame(s.split(" "))
       list_1 = input("enter your first set of numbers: ") .split(" ")
       list1 = list_1
 
