@@ -1,9 +1,9 @@
 
 #Excercise: Hello
 def Hello():
-      name = str(input("hello"))
+      name = str(input("input a word:"))
       return name;
-print("hello " + Hello())
+print(" " + Hello())
 
 #Exercise: check if a number is even
 def even_or_odd(name="even or odd"):
