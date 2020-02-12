@@ -8,40 +8,49 @@ result = Hello ("Tshepo")
 print(result)
 
 #Exercise: check if a number is even/removed line to take an input
-def even_or_odd(number):#
+def even_or_odd(number):
+    even_result = "{0} is even" .format(number)
+    odd_result = "{0} is odd" .format(number)
     if (number % 2) == 0:
-        print( "{0} is even" .format(number))
+        return even_result  
     else:
-        print("{0} is odd" .format(number))
-even_or_odd(2)
- 
+        return odd_result        
+look = even_or_odd(2) # Look function to check/look whether the given integer is even or odd
+print(look)
+      
 # Exercise: Draw a square/removed a line to take an input
-def square(side):
-    for row in range(side):
-        print('#'* side)
-square(2)
-
-#square(4)
-# Exercise: Draw a square/ removed a line to take an input
 def square(number_rows):
+    square_form = ''
+    
     for row in range(number_rows):
-        print('#'* number_rows)
-square(4)
+        for coloumn in range(number_rows):
+            print('#',  end="")
+        print()
+    return square_form
+test1 = square(2)
+test2 = square(4)
+print(test1)
+print(test2)
 
 #Triangle (2)
 # Exercise: Draw a right handed triangle/removed line that takes an input
 def triangle(number_rows):
+    triangle_size = ''
     for row_count in range(abs(number_rows) + 1):
         print("#" * row_count)
-triangle(2)
+    return triangle_size
+test1 = triangle(2)
+print(test1)
 
 # Exercise: Draw a right handed triangle
-ddef triangle(num_rows):
-    for row_count in range(abs(num_rows) + 1):
+def triangle(number_rows):
+    triangle_size = ''
+    for row_count in range(abs(number_rows) + 1):
         print("#" * row_count)
-triangle(4)
+    return triangle_size
+test1 = triangle(4)
+print(test1)
  
-
 #Exercise: Draw an isosceles triangle
 #Isosceles (2)
 def isosceles(num):
@@ -55,20 +64,8 @@ def isosceles(num):
             print("#", end=" ") 
         print("\r")
         
-          ef triangle(name = "x"):
-38
-    x = int(input("enter any number of a row: "))
-39
-    for i in range(x):
-40
-        for j in range(i + 1):
-41
-            print('#', end = ' ')
-42
-        print()
-43
-triangle(4)      
-num = 2
+                
+num = 4
 isosceles(num)
 
 
