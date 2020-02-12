@@ -5,14 +5,17 @@ def Hello():
       return name;
 print(" " + Hello())
 
+#second 
+def hello(name):
+    return "Hello" + " " + name + "!"
+
 #Exercise: check if a number is even
-def even_or_odd(name="even or odd"):
-    num = int(input("enter a number: "))
+def even_or_odd(num):
     if (num % 2) == 0:
         print( "{0} is even" .format(num))
     else:
         print("{0} is odd" .format(num))
-even_or_odd("even or odd")
+even_or_odd(2)
  
 #Exercise: Draw a square
 #Square(2)
