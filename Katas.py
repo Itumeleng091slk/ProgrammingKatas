@@ -1,15 +1,10 @@
 
-#Excercise: Hello
-def Hello():
-      name = str(input("input a word:"))
-      return name;
-print(" " + Hello())
-
-#second 
-def hello(name):
+#Excercise: Hello/removed line that takes an input
+ def hello(name):
     return "Hello" + " " + name + "!"
+print(hello("tshepo"))
 
-#Exercise: check if a number is even
+#Exercise: check if a number is even/removed line to take an input
 def even_or_odd(num):
     if (num % 2) == 0:
         print( "{0} is even" .format(num))
@@ -17,49 +12,32 @@ def even_or_odd(num):
         print("{0} is odd" .format(num))
 even_or_odd(2)
  
-#Exercise: Draw a square
-#Square(2)
- 
-# Exercise: Draw a square
-def square(name ="side"):
-    side = int(input("enter any number of the square : "))
-    print("Square")
+# Exercise: Draw a square/removed a line to take an input
+def square(side):
     for i in range(side):
-        for i in range(side):
-            print('#', end = ' ')
-        print()
+        print('#'* side)
 square(2)
 
 #square(4)
-# Exercise: Draw a square
-def square(name ="side"):
-    side = int(input("enter any number of the square : "))
-    print("Square")
+# Exercise: Draw a square/ removed a line to take an input
+def square(side):
     for i in range(side):
-        for i in range(side):
-            print('#', end = ' ')
-        print()
+        print('#'* side)
 square(4)
 
 #Triangle (2)
-# Exercise: Draw a right handed triangle
-def triangle(name = "x"):
-    x = int(input("enter any number of a row: "))
-    for i in range(x):
-        for j in range(i + 1):
-            print('#', end = ' ')
-        print()
+# Exercise: Draw a right handed triangle/removed line that takes an input
+def triangle(num_rows):
+    for row_count in range(abs(num_rows) + 1):
+        print("#" * row_count)
 triangle(2)
- 
-#Triangle(4)
+
 # Exercise: Draw a right handed triangle
-def triangle(name = "x"):
-    x = int(input("enter any number of a row: "))
-    for i in range(x):
-        for j in range(i + 1):
-            print('#', end = ' ')
-        print()
+ddef triangle(num_rows):
+    for row_count in range(abs(num_rows) + 1):
+        print("#" * row_count)
 triangle(4)
+ 
 
 #Exercise: Draw an isosceles triangle
 #Isosceles (2)
@@ -74,7 +52,19 @@ def isosceles(num):
             print("#", end=" ") 
         print("\r")
         
-                
+          ef triangle(name = "x"):
+38
+    x = int(input("enter any number of a row: "))
+39
+    for i in range(x):
+40
+        for j in range(i + 1):
+41
+            print('#', end = ' ')
+42
+        print()
+43
+triangle(4)      
 num = 2
 isosceles(num)
 
