@@ -33,7 +33,7 @@ print(test1)
 print(test2)
 
 #Triangle (2)
-# Exercise: Draw a right handed triangle/removed line that takes an input
+# Exercise: Draw a right angle triangle/removed line that takes an input
 def triangle(number_rows):
     triangle_size = ''
     for row_count in range(abs(number_rows) + 1):
@@ -53,75 +53,88 @@ print(test1)
  
 #Exercise: Draw an isosceles triangle
 #Isosceles (2)
-def isosceles(num):
-    num = int(input("enter the number of rows:"))
-    num = 2*num - 2
-    for i in range(0, num):
-        for j in range (0, num):
+def isosceles(number_row):
+    isosceles_row = ''
+    number_row = 2*number_row - 2
+    
+    for count_row in range(0,number_row):
+        for column in range (0, number_row):
             print(end=" ")
-        num = num -1
-        for j in range(0, i+1):    
+        number_row = number_row -1
+        for column in range(0, count_row+1):    
             print("#", end=" ") 
         print("\r")
-        
-                
-num = 4
-isosceles(num)
+    return isosceles_row 
 
+test1 = isosceles(2)
+
+print(test1)
 
 #Isosceles (4)
-  def isosceles(num):
-    num = int(input("enter the number of rows:"))
-    num = 2*num - 2
-    for i in range(0, num):
-        for j in range (0, num):
+ def isosceles(number_row):
+    isosceles_row = ''
+    number_row = 2*number_row - 2
+    
+    for count_row in range(0,number_row):
+        for column in range (0, number_row):
             print(end=" ")
-        num = num -1
-        for j in range(0, i+1):    
+        number_row = number_row -1
+        for column in range(0, count_row+1):    
             print("#", end=" ") 
         print("\r")
-        
-                
-num = 4
-isosceles(num)
+    return isosceles_row 
 
+test1 = isosceles(4)
+
+print(test1)
 
 # Exercise: find the longest string
 def longest(w):
-    print("The longest word in the list is: ")
+    longest_word = ''
     words = list(w.split(" "))
     length= []
-    for i in words:
-        length.append(len(i))
+    for word in words:
+        length.append(len(word))
     maximum = max(length)
     returnlist= []
-    for j in words:
-        if len(j) ==maximum:
-           returnlist.append(j)
-           list_word = j
+    for long in words:
+        if len(long) ==maximum:
+           returnlist.append(long)
+           list_word = long
            print(list_word)
-longest(input("enter your words: "))
-
+    return longest_word
+test = longest("the qucik brwon fox ate  chickens")
+print(test)
 
 #Exercise: combine two lists/arrays
-def combine():
-      list1 = []
-      list2 = []
+def combine(list_1, list_2):
+    len1 = len(list_1)
+    len2 = len(list_2)
+    join = []
     
-      list_1 = input("enter your first set of numbers: ") .split(" ")
-      list1 = list_1
+    if len1 > len2:
+        for list in range(len2):
+            join.append(list_1[list])
+            join.append(list_2[list])
+        # Now add remaining elements from list1
+        for remaining_index in range(list,len1):
+            join.append(list_1[remaining_index])
+    elif len1 < len2:
+        list = 0
+        for list in range(len1):
+            join.append(list_1[list])
+            join.append(list_2[list])
+        for remaining_index in range(list,len2):
+            join.append(list_2[remaining_index])
+    else:
+        if len1 == len2:
+            for list in range(len1):
+                join.append(list_1[list])
+                join.append(list_2[list])
+    return join
+test1 = combine([1,2,3],[11,22,33])
+print(test1)
 
-      list_2 = input("enter your second set of numbers: ").split(" ")
-      list2 = list_2
-  
-      n = len(list1)
-      store_list = []
-      for i in range(n):
-          store_list.append(list1[i])
-          store_list.append(list2[i])
-      print(store_list)
-      
-combine()
 
 #Exercise: Frame some text
 def frame(words) : 
