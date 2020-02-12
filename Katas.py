@@ -1,34 +1,37 @@
 
 #Excercise: Hello/removed line that takes an input
- def hello(name):
-    return "Hello" + " " + name + "!"
-print(hello("tshepo"))
+ def Hello(person_name):
+     greet = "Hello" + " " + person_name + "!"
+     return greet
+
+result = Hello ("Tshepo")
+print(result)
 
 #Exercise: check if a number is even/removed line to take an input
-def even_or_odd(num):
-    if (num % 2) == 0:
-        print( "{0} is even" .format(num))
+def even_or_odd(number):#
+    if (number % 2) == 0:
+        print( "{0} is even" .format(number))
     else:
-        print("{0} is odd" .format(num))
+        print("{0} is odd" .format(number))
 even_or_odd(2)
  
 # Exercise: Draw a square/removed a line to take an input
 def square(side):
-    for i in range(side):
+    for row in range(side):
         print('#'* side)
 square(2)
 
 #square(4)
 # Exercise: Draw a square/ removed a line to take an input
-def square(side):
-    for i in range(side):
-        print('#'* side)
+def square(number_rows):
+    for row in range(number_rows):
+        print('#'* number_rows)
 square(4)
 
 #Triangle (2)
 # Exercise: Draw a right handed triangle/removed line that takes an input
-def triangle(num_rows):
-    for row_count in range(abs(num_rows) + 1):
+def triangle(number_rows):
+    for row_count in range(abs(number_rows) + 1):
         print("#" * row_count)
 triangle(2)
 
