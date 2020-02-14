@@ -18,7 +18,7 @@ test1 = isosceles(2)
 print(test1)
 
 #Isosceles (4)
- def isosceles(number_row):
+def isosceles(number_row):
     isosceles_row = ''
     number_row = 2*number_row - 2
     
