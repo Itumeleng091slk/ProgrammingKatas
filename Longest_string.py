@@ -14,5 +14,5 @@ def longest(width):
     return longest_word
 
 print(list_word)
-test = longest("the qucik brown fox ate  chickens")
+test = longest("the quick brown fox ate  chickens")
 print(test)
