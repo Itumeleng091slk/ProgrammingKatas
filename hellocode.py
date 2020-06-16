@@ -1,7 +1,7 @@
 #Excercise: Hello/removed line that takes an input
-def Hello(person_name):
+def hello(person_name):
      greet = "Hello" + " " + person_name + "!"
      return greet
 
-result = Hello ("Tshepo")
+result = hello ("Tshepo")
 print(result)
