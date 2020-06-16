@@ -1,5 +1,4 @@
 #Exercise: Frame some text
-
 def frame_code(words):
     len_words = len(words) #find the longest word first
     longest = words[0]
