@@ -1,17 +1,18 @@
 # Exercise: find the longest string
-def longest(w):
+def longest(width):
     longest_word = ''
-    words = list(w.split(" "))
+    words = list(width.split(" "))
     length= []
     for word in words:
         length.append(len(word))
     maximum = max(length)
-    returnlist= []
+    return_list= []
     for long in words:
         if len(long) ==maximum:
-           returnlist.append(long)
+           return_list.append(long)
            list_word = long
-           print(list_word)
     return longest_word
-test = longest("the qucik brwon fox ate  chickens")
+
+print(list_word)
+test = longest("the qucik brown fox ate  chickens")
 print(test)
