@@ -3,7 +3,10 @@ def even_or_odd(number):
     if(number % 2 == 0):
         return "even"
     else:
-        return "odd"     
-result = even_or_odd(2) # Look function to check/look whether the given integer is even or odd
-print(result)
+        return "odd" 
+
+if __name__ == "__main__":
+    result = even_or_odd(1) 
+    print(result) 
+
 
