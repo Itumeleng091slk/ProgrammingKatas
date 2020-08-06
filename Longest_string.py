@@ -10,9 +10,7 @@ def longest_word(string=[]):
         if len(words) == maximum:
            return_list.append(words)
     print("\n".join(return_list))
-    return "longest word printed"
     
 if __name__ == "__main__":
     longest_word(["the", "quick", "brown", "fox", "ate", "my", "chickens"])
     longest_word(["once","upon","a","time"])
-
